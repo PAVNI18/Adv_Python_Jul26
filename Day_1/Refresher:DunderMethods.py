@@ -1,12 +1,12 @@
- #Dunder methods : Double Underscore
+ #Dunder methods : Double Underscore eg: __init__, __str__, __repr__, __eq__ etc.
 class Book:
     def __init__(self,title,author):
         self.title = title
         self.author = author
-    # String representation for users
+    
     def __str__(self):
         return f"{self.title} by {self.author}"
-    # String representation for developers
+    
     def __repr__(self):
         return f"Book('{self.title}','{self.author}')"
 
@@ -20,9 +20,9 @@ book1 = Book("Python 101", "Mark Davis")
 book2 = Book("Python 101", "Mark Davis")
 book3 = Book("Advanced Python", "Tom Harry")
 
-# print(book1)
+print(book1)
 print(repr(book1))
-# print(book1 == book2)
-# print(book1 == book3)
-# __getitem__ : indexing access
-# __call__ : make object callable
+print(book1 == book2)
+print(book1 == book3)
+#__getitem__ : indexing access
+#__call__ : make object callable
